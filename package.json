@@ -11,12 +11,13 @@
     "url": "https://github.com/Verteilen/Verteilen-Core/issues"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "build": "ts-node build.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "verteilen-core": "^1.3.35"
   }
 }

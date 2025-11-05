@@ -1,0 +1,249 @@
+{
+    "uuid": "1f0ba076-3f98-6640-9c63-812ce5097344",
+    "title": "Images to Videos",
+    "description": "",
+    "tasks": [
+        {
+            "uuid": "1f0ba076-3f98-6643-8d85-3a6cbdbbab14",
+            "title": "Images to Videos",
+            "description": "",
+            "setupjob": false,
+            "cronjob": true,
+            "cronjobKey": "I2Video.data.length",
+            "multi": false,
+            "multiKey": "",
+            "properties": [
+                {
+                    "name": "e_src",
+                    "expression": "STRING(['I2Video.data.', ck, '.src'])"
+                },
+                {
+                    "name": "e_start",
+                    "expression": "STRING(['I2Video.data.', ck, '.start'])"
+                },
+                {
+                    "name": "e_end",
+                    "expression": "STRING(['I2Video.data.', ck, '.end'])"
+                },
+                {
+                    "name": "e_output",
+                    "expression": "STRING(['I2Video.data.', ck, '.output'])"
+                },
+                {
+                    "name": "r_src",
+                    "expression": "e_src",
+                    "deep": 2
+                },
+                {
+                    "name": "r_start",
+                    "expression": "e_start",
+                    "deep": 2
+                },
+                {
+                    "name": "r_end",
+                    "expression": "e_end",
+                    "deep": 2
+                },
+                {
+                    "name": "r_output",
+                    "expression": "e_output",
+                    "deep": 2
+                }
+            ],
+            "jobs": [
+                {
+                    "uuid": "1f0ba076-3f98-6642-a069-102e119091e3",
+                    "title": "",
+                    "description": "",
+                    "category": 1,
+                    "type": 9,
+                    "script": "",
+                    "string_args": [
+                        "ffmpeg",
+                        "-hide_banner -y -framerate %I2Video% -ss %r_start% -i %root%/%r_src% -to %r_end% -c:v %video_encode% -b:v %video_bitrate% -crf %crf% -pix_fmt %pixel_format% %root%/%r_output%"
+                    ],
+                    "number_args": [],
+                    "boolean_args": [],
+                    "id_args": []
+                }
+            ],
+            "jobs_uuid": []
+        }
+    ],
+    "tasks_uuid": [],
+    "database_uuid": "",
+    "database": {
+        "title": "FFmpeg Database",
+        "uuid": "1f0ba076-3f98-6641-949a-3ca5391f9e99",
+        "canWrite": true,
+        "containers": [
+            {
+                "name": "root",
+                "value": "",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "download",
+                "value": {
+                    "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                    "output": "BigBuckBunny.mp4"
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "Video2I",
+                "value": {
+                    "src": "BigBuckBunny.mp4",
+                    "fps": "1",
+                    "folder": "images",
+                    "output": "images_%04d.png"
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "I2Video",
+                "value": {
+                    "framerate": 24,
+                    "data": [
+                        {
+                            "src": "images/images%04d.png",
+                            "start": "00:00:00",
+                            "end": "00:05:00",
+                            "output": "output1.mp4"
+                        },
+                        {
+                            "src": "images/images%04d.png",
+                            "start": "00:00:00",
+                            "end": "00:09:56",
+                            "output": "output2.mp4"
+                        }
+                    ]
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "Concat",
+                "value": {
+                    "videos": [
+                        "output1.mp4",
+                        "output2.mp4"
+                    ],
+                    "output": "final.mov"
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "Transcode",
+                "value": {
+                    "src": "BigBuckBunny.mp4",
+                    "output": "transcode_final.mov"
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "resize",
+                "value": {
+                    "src": "BigBuckBunny.mp4",
+                    "output": "resize_final.mov",
+                    "wiidth": 1920,
+                    "height": 1080
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "Info",
+                "value": {
+                    "src": "BigBuckBunny.mp4",
+                    "output": "media_info.json"
+                },
+                "type": 3,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "crf",
+                "value": 21,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "fps",
+                "value": 24,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "format",
+                "value": "mp4",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "video_encode",
+                "value": "h264",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "audio_encode",
+                "value": "aac",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "pixel_format",
+                "value": "yuv420p",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "video_bitrate",
+                "value": "50M",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "color_primaries",
+                "value": "1",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "color_trc",
+                "value": "1",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "colorspace",
+                "value": "1",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            }
+        ]
+    }
+}

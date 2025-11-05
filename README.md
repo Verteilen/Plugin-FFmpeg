@@ -11,7 +11,7 @@ In the github repo page, click the json file to preview, Click upper-right corne
 Then copy the url link
 <img src="./docs/Raw.png" alt="PageImage" />
 
-You will get [https://raw.githubusercontent.com/Verteilen/FFmpeg-Plugin/refs/heads/main/plugin.json](https://raw.githubusercontent.com/Verteilen/FFmpeg-Plugin/refs/heads/main/plugin.json)
+You will get [https://raw.githubusercontent.com/Verteilen/FFmpeg-Plugin/refs/heads/main/dist/manifest.json](https://raw.githubusercontent.com/Verteilen/FFmpeg-Plugin/refs/heads/main/dist/manifest.json)
 
 Then let's open up the application, go the plugin page to import
 
