@@ -2,7 +2,7 @@
 
 The ffmpeg executable files plugin
 
-https://raw.githubusercontent.com/Verteilen/Plugin-FFmpeg/refs/heads/main/plugin.json
+https://raw.githubusercontent.com/Verteilen/Plugin-FFmpeg/refs/heads/main/dist/manifest.json
 
 ## Import
 
