@@ -81,21 +81,29 @@ PluginBuild(
     // Template metadata
     projects: FFmpeg_ProjectTempGroup,
     databases: FFmpeg_DatabaseTempGroup
-}, "1.0.0", [
-    {
-        key: "en",
-        value: {
-            ffmpegDes: "ffmpeg for transcode process execute",
-            ffplayDes: "ffplay for video playing",
-            ffprobeDes: "ffprobe media vaildation",
+}, 
+{
+    version: "1.0.0",
+    title: "FFmpeg",
+    description: "pluginDes",
+    i18n: [
+        {
+            key: "en",
+            value: {
+                pluginDes: "Open-source multimedia framework",
+                ffmpegDes: "ffmpeg for transcode process execute",
+                ffplayDes: "ffplay for video playing",
+                ffprobeDes: "ffprobe media vaildation",
+            }
+        },
+        {
+            key: "zh-TW",
+            value: {
+                pluginDes: "開源多媒體框架",
+                ffmpegDes: "ffmpeg 編碼動作執行",
+                ffplayDes: "ffplay 影片播放",
+                ffprobeDes: "ffprobe 格式確認",
+            }
         }
-    },
-    {
-        key: "zh-TW",
-        value: {
-            ffmpegDes: "ffmpeg 編碼動作執行",
-            ffplayDes: "ffplay 影片播放",
-            ffprobeDes: "ffprobe 格式確認",
-        }
-    }
-])
+    ]
+})

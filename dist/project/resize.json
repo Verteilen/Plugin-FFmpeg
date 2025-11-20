@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0c5b77-2288-62f3-b6b2-b342ac26147b",
+    "uuid": "1f0c5baf-5a36-6344-8a9b-3747c5fa201d",
     "title": "Media Resize",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0c5b77-2288-62f6-b751-4c5970c40cdd",
+            "uuid": "1f0c5baf-5a36-6347-9ad9-6132fc2b27e4",
             "title": "Resize a media",
             "description": "",
             "setupjob": false,
@@ -15,7 +15,7 @@
             "properties": [],
             "jobs": [
                 {
-                    "uuid": "1f0c5b77-2288-62f5-a10e-ed4d9a669e87",
+                    "uuid": "1f0c5baf-5a36-6346-ac68-990061349222",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -37,7 +37,7 @@
     "database_uuid": "",
     "database": {
         "title": "FFmpeg Database",
-        "uuid": "1f0c5b77-2288-62f4-82a5-f5b0503f2c1a",
+        "uuid": "1f0c5baf-5a36-6345-90bb-146f5c5d140f",
         "canWrite": true,
         "containers": [
             {
