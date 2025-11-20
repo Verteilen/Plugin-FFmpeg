@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0ba076-3f9d-6460-8e1f-744ad15bed34",
+    "uuid": "1f0c5b77-228a-6a00-94de-636daaeb4c21",
     "title": "Media Info",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0ba076-3f9d-6463-aa60-b2f3237f84bb",
+            "uuid": "1f0c5b77-228a-6a03-aa79-9255b6c1193b",
             "title": "Fetch info into json file",
             "description": "",
             "setupjob": false,
@@ -15,7 +15,7 @@
             "properties": [],
             "jobs": [
                 {
-                    "uuid": "1f0ba076-3f9d-6462-bdb0-3886031932ff",
+                    "uuid": "1f0c5b77-228a-6a02-89fd-ae236d8f4d30",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -37,7 +37,7 @@
     "database_uuid": "",
     "database": {
         "title": "FFmpeg Database",
-        "uuid": "1f0ba076-3f9d-6461-ac85-4bc87c97ed1b",
+        "uuid": "1f0c5b77-228a-6a01-b275-17bf4f4ee170",
         "canWrite": true,
         "containers": [
             {

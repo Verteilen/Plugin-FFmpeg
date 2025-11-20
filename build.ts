@@ -81,4 +81,21 @@ PluginBuild(
     // Template metadata
     projects: FFmpeg_ProjectTempGroup,
     databases: FFmpeg_DatabaseTempGroup
-})
+}, "1.0.0", [
+    {
+        key: "en",
+        value: {
+            ffmpegDes: "ffmpeg for transcode process execute",
+            ffplayDes: "ffplay for video playing",
+            ffprobeDes: "ffprobe media vaildation",
+        }
+    },
+    {
+        key: "zh-TW",
+        value: {
+            ffmpegDes: "ffmpeg 編碼動作執行",
+            ffplayDes: "ffplay 影片播放",
+            ffprobeDes: "ffprobe 格式確認",
+        }
+    }
+])

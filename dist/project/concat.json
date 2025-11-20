@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0ba076-3f40-6800-84a2-3c87311c76c4",
+    "uuid": "1f0c5b77-2283-64d0-b7dd-409f7a5222a7",
     "title": "Media Concat",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0ba076-3f40-6804-8a19-1933d798ee98",
+            "uuid": "1f0c5b77-2285-6be2-b94c-caa9c06b68e9",
             "title": "Concat videos to a single video",
             "description": "",
             "setupjob": false,
@@ -15,7 +15,7 @@
             "properties": [],
             "jobs": [
                 {
-                    "uuid": "1f0ba076-3f40-6802-bc18-bfd3e8ef1606",
+                    "uuid": "1f0c5b77-2285-6be0-b19e-de6f53a4bf7e",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -27,7 +27,7 @@
                     "id_args": []
                 },
                 {
-                    "uuid": "1f0ba076-3f40-6803-a460-18fd740b3183",
+                    "uuid": "1f0c5b77-2285-6be1-9d7a-3ef15a532997",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -49,7 +49,7 @@
     "database_uuid": "",
     "database": {
         "title": "FFmpeg Database",
-        "uuid": "1f0ba076-3f40-6801-80fd-2ccf198e1923",
+        "uuid": "1f0c5b77-2283-64d1-8674-5e894cecf8d1",
         "canWrite": true,
         "containers": [
             {

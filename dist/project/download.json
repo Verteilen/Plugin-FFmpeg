@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0ba076-3f95-6f30-9b19-be66ff65dce8",
+    "uuid": "1f0c5b77-2285-6be3-96f7-d650244e84ac",
     "title": "Media Download",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0ba076-3f95-6f33-94a1-7f6936f9f155",
+            "uuid": "1f0c5b77-2285-6be6-98f0-bb14f2af8155",
             "title": "Download video to source",
             "description": "",
             "setupjob": false,
@@ -15,7 +15,7 @@
             "properties": [],
             "jobs": [
                 {
-                    "uuid": "1f0ba076-3f95-6f32-bec8-0666aff1d9fb",
+                    "uuid": "1f0c5b77-2285-6be5-91a8-9f44c352ddaf",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -37,7 +37,7 @@
     "database_uuid": "",
     "database": {
         "title": "FFmpeg Database",
-        "uuid": "1f0ba076-3f95-6f31-99ec-c93e7c3e526c",
+        "uuid": "1f0c5b77-2285-6be4-ab9b-3f602da8ed83",
         "canWrite": true,
         "containers": [
             {

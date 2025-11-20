@@ -1,8 +1,27 @@
 {
     "thumbnail": "",
     "icon": "",
-    "owner": "Elly",
-    "title": "FFmpeg",
+    "owner": "",
+    "title": "",
+    "version": "1.0.0",
+    "i18n": [
+        {
+            "key": "en",
+            "value": {
+                "ffmpegDes": "ffmpeg for transcode process execute",
+                "ffplayDes": "ffplay for video playing",
+                "ffprobeDes": "ffprobe media vaildation"
+            }
+        },
+        {
+            "key": "zh-TW",
+            "value": {
+                "ffmpegDes": "ffmpeg 編碼動作執行",
+                "ffplayDes": "ffplay 影片播放",
+                "ffprobeDes": "ffprobe 格式確認"
+            }
+        }
+    ],
     "plugins": [
         {
             "name": "ffmpeg",

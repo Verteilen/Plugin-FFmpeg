@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0ba076-3f9a-6d50-8ab6-e0b6c1e99fd6",
+    "uuid": "1f0c5b77-2288-62f7-80b2-d90849e15093",
     "title": "Media Transcode",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0ba076-3f9a-6d53-ab16-e499e446e9ef",
+            "uuid": "1f0c5b77-2288-62fa-aa9b-8b3627678541",
             "title": "Render frame one by one",
             "description": "",
             "setupjob": false,
@@ -15,7 +15,7 @@
             "properties": [],
             "jobs": [
                 {
-                    "uuid": "1f0ba076-3f9a-6d52-bf6f-58d60fbb42b5",
+                    "uuid": "1f0c5b77-2288-62f9-bf0a-4bb184cb905f",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -37,7 +37,7 @@
     "database_uuid": "",
     "database": {
         "title": "FFmpeg Database",
-        "uuid": "1f0ba076-3f9a-6d51-a934-5c5eec551c44",
+        "uuid": "1f0c5b77-2288-62f8-882f-2b44d34dc689",
         "canWrite": true,
         "containers": [
             {
