@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0c5baf-5a36-6340-af24-4788a88f5c97",
+    "uuid": "1f0c5be5-a9ea-6596-bba0-a83738bf24db",
     "title": "Images to Videos",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0c5baf-5a36-6343-84a8-d11248068b1f",
+            "uuid": "1f0c5be5-a9ea-6599-83e3-1e610cbe5a65",
             "title": "Images to Videos",
             "description": "",
             "setupjob": false,
@@ -52,7 +52,7 @@
             ],
             "jobs": [
                 {
-                    "uuid": "1f0c5baf-5a36-6342-b8e5-c1348d87bf93",
+                    "uuid": "1f0c5be5-a9ea-6598-a7d4-2a0878be8525",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -74,7 +74,7 @@
     "database_uuid": "",
     "database": {
         "title": "FFmpeg Database",
-        "uuid": "1f0c5baf-5a36-6341-99f3-b939c01de022",
+        "uuid": "1f0c5be5-a9ea-6597-a528-3a71e3bc938a",
         "canWrite": true,
         "containers": [
             {

@@ -97,7 +97,7 @@ PluginBuild(
             }
         },
         {
-            key: "zh-TW",
+            key: "zh_TW",
             value: {
                 pluginDes: "開源多媒體框架",
                 ffmpegDes: "ffmpeg 編碼動作執行",
